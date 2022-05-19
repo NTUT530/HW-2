@@ -46,7 +46,7 @@ public class CalculatorFormTest {
 		System.out.println("Testing addition and subtraction:");
 		System.out.println(test_str);
         result = evalInput(test_str);
-        assertEquals(-9363813, result, 0);
+        assertEquals(-9363813.0, result, 0);
     }
 
     @ Test
@@ -54,7 +54,7 @@ public class CalculatorFormTest {
         double result = 0;
         clearAll();
         result = evalInput("15*2*3*123=");
-        assertEquals(11070, result, 0);
+        assertEquals(11070.0, result, 0);
     }
 
     @ Test
@@ -65,7 +65,7 @@ public class CalculatorFormTest {
 		System.out.println("Testing division:");
 		System.out.println(test_str);
         result = evalInput(test_str);
-        assertEquals(10, result, 0);
+        assertEquals(10.0, result, 0);
     }
 
     @ Test
@@ -76,7 +76,7 @@ public class CalculatorFormTest {
 		System.out.println("Testing floating point calculation:");
 		System.out.println(test_str);
         result = evalInput(test_str);
-        assertEquals(0.1512, result, 0);
+        assertEquals(0.1512.0, result, 0);
     }
 
     public static void main(String[] args) {
