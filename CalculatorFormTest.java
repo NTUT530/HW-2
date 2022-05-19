@@ -76,7 +76,7 @@ public class CalculatorFormTest {
 		System.out.println("Testing floating point calculation:");
 		System.out.println(test_str);
         result = evalInput(test_str);
-        assertEquals(0.1512.0, result, 0);
+        assertEquals(0.1512, result, 0);
     }
 
     public static void main(String[] args) {
